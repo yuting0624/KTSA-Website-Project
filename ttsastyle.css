@@ -22,7 +22,7 @@ font-size: 22px;
 }
 
 .top-wrapper {
-  margin-top:5.9%;
+  margin-top:5.2%;
 padding:180px 0 100px;
 background-image:url(KTSA.jpg);
 background-repeat: no-repeat;
@@ -165,14 +165,10 @@ margin-top: 5px;
 .header-left {
 float:left
 }
-.header-left h3{
-  padding-left: 130%;
-  font-size: 70%;
-  color:white;
-  font-family: 'Josefin Sans', sans-serif;
-}
+
 .header-right {
-float:right
+float:right;
+font-family:"Noto Sans Japanese";
 }
 
 .header-right > a {
@@ -556,9 +552,9 @@ padding-right:6%
  #menu {
    width: 100%;
    height:100%;
-   background: ##585858;
+
    text-align: right;
-   font-size: 60px;
+   font-size: 65px;
  }
  #menu li {
    display: -moz-inline-box;
@@ -602,15 +598,10 @@ height:auto
 display:none
 }
 
-.mobile-header {
-display:inline-block
+.container{
+  height:73px;
+  weight:100%;
 }
-
-.modal {
-left:10%;
-top:20%
-}
-
 .place {
 width:100%;
 height:auto
@@ -632,7 +623,7 @@ text-align:center
 
 .top-wrapper {
 padding-top: 20%;
-margin-top: 18%;
+margin-top: 17%;
 }
 
 #menu {
@@ -648,7 +639,7 @@ margin-top: 18%;
     transition: margin 500ms linear;
     margin-top: -1.2em;
     overflow: hidden;
-
+    background-color: #A4A4A4;
   }
   #menu li {
     max-height: 0;
@@ -718,5 +709,5 @@ margin-top: 18%;
   margin-top: 5%;
   margin-right: 14%;
   text-align: right;
-  font-size: 90%;
+  font-size: 80%;
 }
