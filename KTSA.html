@@ -30,20 +30,21 @@
         <img class="logo" src="enblame.png">
 　　　　　<h3>Keio<br>Taiwanese<br>Student<br>Association</h3>
       </div>
-      <div class="header-right">
-        <a href="KTSA.html" class="action start material-icons">home
-          <span>ホームページ</span></a>
-        <a class="start material-icons" onclick="$('.leader').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">account_box
-          <span>代表挨拶</span></a>
-        <a href="contact.php" class="start material-icons">feedback
-          <span>お問い合わせ</span></a>
-          <a class="start material-icons" onclick="$('.sponsor').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">monetization_on
-            <span>協賛のお願い</span></a>
+      <nav role="navigation" id=access>
+        <a class="skip-link  icon-reorder" title="menu" href="#menu">Menu</a>
+        <ul id="menu">
+          <li class="active"><a href="KTSA.html" class="material-icons">home
+          ホームページ</a></li>
+        <li><a class="material-icons" onclick="$('.leader').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">account_box
+          <span>代表挨拶</span></a></li>
+        <li><a href="contact.php" class="material-icons">feedback
+          <span>お問い合わせ</span></a></li>
+          <li><a class="material-icons" onclick="$('.sponsor').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">monetization_on
+            <span>協賛のお願い</span></a></li>
 
-
+</nav>
 
       </div>
-    </div>
   </header>
   <div id="top-wrapper" class="top-wrapper">
     <div class="container" >
@@ -145,6 +146,17 @@
       return false;
       })
       });
+
+      ;(function($) {
+    "use strict";
+    $(document).ready(function() {
+        $('#access').on('touchstart click', '.skip-link', function(event) {
+            $(this).toggleClass('focus');
+            $($(this).attr('href')).toggleClass('target');
+            event.preventDefault();
+        }).find('.skip-link').append('<span>'+$('#menu .active').text()+'</span>');
+    });
+})(jQuery);
       </script>
       <script src="script.js"></script>
       <script src="test.js"></script>
