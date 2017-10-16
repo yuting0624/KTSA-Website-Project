@@ -705,6 +705,9 @@ margin-top: 17%;
     -o-transform: rotateX(0) scale(1);
     transform: rotateX(0) scale(1);
 }
+.follow-me{
+  margin-top:25%;
+}
 .skip-link, .icon-reorder{
   margin-top: 5%;
   margin-right: 14%;
